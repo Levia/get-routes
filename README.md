@@ -1,6 +1,6 @@
 # get-routes package
 
-Display and select the routes of your project.
+Display and select the routes of your Ruby on Rails project.
 
 Use `cmd-alt-r` to display the list of the routes.
 Use `cmd-alt-l` to reload all the routes.
