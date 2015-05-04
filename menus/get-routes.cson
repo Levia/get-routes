@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle get-routes'
+      'command': 'get-routes:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'get-routes'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'get-routes:toggle'
+        }
+      ]
+    ]
+  }
+]

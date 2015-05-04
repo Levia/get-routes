@@ -1,0 +1,14 @@
+{
+  "name": "get-routes",
+  "main": "./lib/get-routes",
+  "version": "0.0.0",
+  "description": "Display and select the routes of your project",
+  "repository": "https://github.com/atom/get-routes",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.0"
+  }
+}
