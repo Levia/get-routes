@@ -2,12 +2,12 @@ GetRoutesView = require './get-routes-view'
 
 module.exports =
 
-	activate: ->
+  activate: ->
     @get_routes()
     atom.workspaceView.command "get-routes:routes", => @routes()
     atom.workspaceView.command "get-routes:dispose", => @dispose()
 
-	get_routes: ->
+  get_routes: ->
 		exec = require("child_process").exec
 		child = undefined
 
@@ -21,9 +21,9 @@ module.exports =
 			  console.log "exec error: " + error  if error isnt null
 		)
 
-	routes: ->
+  routes: ->
 		@getRoutesView = new GetRoutesView
 		@getRoutesView.setElements(paths)
 
-	dispose: ->
+  dispose: ->
 		@getRoutesView.remove()
