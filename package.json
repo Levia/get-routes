@@ -2,7 +2,7 @@
   "name": "get-routes",
   "main": "./lib/get-routes",
   "version": "0.0.0",
-  "description": "Display and select the routes of your project",
+  "description": "Display and select the routes of your Ruby on Rails project",
   "repository": "https://github.com/atom/get-routes",
   "license": "MIT",
   "engines": {
