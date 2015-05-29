@@ -5,7 +5,7 @@ module.exports =
    initialize: ->
      super
      @addClass('overlay from-top')
-     atom.workspaceView.append(this)
+     this.appendTo(atom.views.getView(atom.workspace))
      @focusFilterEditor()
 
    viewForItem: (item) ->

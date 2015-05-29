@@ -13,7 +13,7 @@ module.exports =
 
     child = exec(
       "bundle exec rake routes | awk '{print $1}' | egrep '^[a-z]+'",
-      cwd: atom.project.getPath(),
+      cwd: atom.project.getPaths(),
       (error, stdout, stderr) ->
         addPath = (str) -> "#{str}_path"
         @paths = stdout.split('\n').map(addPath).sort()
